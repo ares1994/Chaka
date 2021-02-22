@@ -11,18 +11,12 @@ fun getBinaryGaps(value:Int) : Int{
 
         if (s == '0') zeroCount++
         else if (s == '1') {
+            if (zeroCount > maxZeroCount){
             maxZeroCount = zeroCount
+                
+            }
             zeroCount = 0
         }
-        
-        
-        if (index == binary.length-1 && s == '0') maxZeroCount = 0
-        
     }
-   
-        
-        println(maxZeroCount.toString()) 
-    
-    
     return maxZeroCount
 }
