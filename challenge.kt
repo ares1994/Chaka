@@ -7,7 +7,7 @@ fun getBinaryGaps(value:Int) : Int{
     var maxZeroCount = 0
     
     
-    binary.forEachIndexed{index, s->
+    binary.forEach{s->
 
         if (s == '0') zeroCount++
         else if (s == '1') {
